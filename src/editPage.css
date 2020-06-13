@@ -37,7 +37,7 @@ body {
 /* background Section */
 .background {
     position: absolute;
-    top: 0;
+    top: 7;
     left: 0;
     width: 100%;
     height: 100%;
@@ -45,20 +45,6 @@ body {
     overflow: hidden;
 }
 
-.triangle {
-    position: absolute;
-    bottom: -10%;
-    left: 55%;
-    width: 150px;
-    height: 150px;
-    background-color: transparent;
-    border: 10px solid rgba(24, 24, 24, 0.514);
-    z-index: 0;
-    opacity: 0;
-    transform: rotate(45deg);
-    animation: box-rotate 6s forwards;
-    animation-delay: 3s;
-}
 
 @keyframes box-rotate {
     0% {
@@ -76,7 +62,7 @@ body {
 .background-text h1 {
     opacity: 0;
     font-size: 30em;
-    align-self: center;
+    text-align: center;
     color: rgba(0, 0, 0, 0.109);
     z-index: -1;
     animation: background-text-reveal 1s forwards;
@@ -93,20 +79,11 @@ body {
     }
 }
 
-.background-red {
-    position: absolute;
-    top: -40%;
-    right: -19%;
-    width: 50%;
-    height: 160%;
-    background: linear-gradient(rgba(236, 42, 101, 0.75), rgb(234, 39, 39));
-    transform: rotate(-26deg);
-}
 
 /* navigation Section */
 .navbar-brand img {
-    width: 35%;
-    margin-right: 150px;
+    width: 15%;
+    margin-left: 30px;
     opacity: 0;
     animation: logo 1.5s ease-in-out forwards;
     animation-delay: 4.5s;
@@ -132,7 +109,7 @@ body {
 nav ul li {
     position: relative;
     transition: .5s;
-    margin: 5px;
+    margin: 10px;
     opacity: 0;
     animation: nav 1.5s ease-in-out forwards;
 }
@@ -270,8 +247,8 @@ nav ul li a:hover {
     color: white;
     margin-top: 15px;
     border: none;
-    border-radius: 5px;
-    padding: 5px 15px;
+    border-radius: 50px;
+    padding: 5px 30px;
     background-color: rgb(207, 28, 52);
     transition: .5s;
     opacity: 0;

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Firebase Web Basics</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
+
+	<script src="https://use.fontawesome.com/939e9dd52c.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="mainDiv" align="right">
+		<h1 align="left">Firebase File Upload</h1>
+		<progress id="uploader" value="0" max="100">0%</progress>
+		<input type="file" id="fileButton" value="upload"/>
+	</div>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+<script>
+     // Initialize Firebase
+var firebaseConfig = {
+    apiKey: "AIzaSyAh27DKD7ivWFJoYP3aMuI2c_TGLHoPM3Q",
+    authDomain: "fakeurgrams-3434.firebaseapp.com",
+    databaseURL: "https://fakeurgrams-3434.firebaseio.com",
+    projectId: "fakeurgrams-3434",
+    storageBucket: "fakeurgrams-3434.appspot.com",
+    messagingSenderId: "472083761447",
+    appId: "1:472083761447:web:7e5ec35d0cf0d1ae844102",
+    measurementId: "G-XK5C5Y6JLZ"
+};
+// Initialize Firebase
+
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();  
+  var uploader = document.getElementById('uploader');
+  var fileButton =         document.getElementById('fileButton');
+  fileButton.addEventListener('change', function(e){
+  var file = e.target.files[0];
+  var storageRef = firebase.storage().ref('img/'+file.name);
+  var task = storageRef.put(file);
+  task.on('state_changed', function progress(snapshot) {
+    var percentage = (snapshot.bytesTransferred/snapshot.totalBytes)*100;
+    uploader.value = percentage;
+
+  }, function error(err) {
+
+  },function complete() {
+
+  });
+});  
+  
+</script>
+
+</body>
+</html>
