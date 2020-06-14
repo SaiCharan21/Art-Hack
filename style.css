@@ -120,7 +120,7 @@ body {
   cursor: pointer;
 } */
 
-*{
+/* *{
   padding:0;
   margin: 0;
   font-family: sans-serif;
@@ -193,4 +193,14 @@ body{
 .download-btn{
   background: red;
   
+} */
+
+  #canvas {
+  margin: auto;
+  background: #ececec;
+  width: 100%;
+}
+
+.btn-disabled {
+  color: #fff !important;
 }
