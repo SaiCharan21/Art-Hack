@@ -12,7 +12,9 @@ function getLandscape(){
             // img.attr('src', 'data:image/png;base64,' + data);
             // img.appendTo('#imghldr');
             // document.getElementById('theimg').src = 'data:image/png;base64,' + data
-            document.getElementById('theimg').src = data
+            data = btoa(unescape(encodeURIComponent(data)))
+            // console.log(embed())
+            document.getElementById('theimg').src = 'data:image/png;base64,' + data
           },
           error: function() {
             alert('There was some error performing the AJAX call!');

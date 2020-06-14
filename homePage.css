@@ -329,3 +329,7 @@ nav ul li a:hover {
     animation-delay: 6s;
 }
 
+#canvas {
+    height: 200px;
+    width: 200px;
+}
