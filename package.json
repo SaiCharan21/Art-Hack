@@ -47,9 +47,10 @@
   "dependencies": {
     "@google-cloud/compute": "^2.0.0",
     "@google-cloud/storage": "^5.1.0",
-    "angular": "^1.8.0",
+    "angular": "1.8.0",
+    "angular-route": "1.8.0",
     "electron-forge": "^5.2.4",
-    "electron-screenshot": "^1.0.5",
+    "electron-screenshot": "1.0.5",
     "electron-squirrel-startup": "^1.0.0",
     "googleapis": "^52.1.0",
     "image-size": "^0.8.3"

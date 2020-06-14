@@ -9,6 +9,7 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 1300,
     height: 900,
+    frame:false
   });
 
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
