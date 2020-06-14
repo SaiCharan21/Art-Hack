@@ -5,11 +5,9 @@
     <title>FakeUrGram</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="editPage.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="picture_edit.css">
-    <script src="https://code.angularjs.org/1.6.4/angular.min.js"></script>
-    <script src="https://code.angularjs.org/1.6.4/angular-route.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
     <style>
         .image-preview{
@@ -74,24 +72,18 @@
         <div class="row">
             <div class="col-lg-5 col-md-12 col-sm-12">
                 <div class="maintext text-white">
-                     <h4 align="center">Upload a Picture of PNG or JPEG or JPG</h4>
-                   <div class="mainDiv" align="center">
-                    <progress id="uploader" value="0" max="100">0%</progress>
-                     <input align="center" type="file" id="fileButton" value="upload"/>
-                     <div class="image-preview" id="imagePreview">
-                         <img src="" alt="Image Preview" class ="image-preview__image">
-                         <span class="image-preview__default-text">Image Preview</span>
-                     </div>
+                   <div class="mainDiv" id = "imghldr" align="center">
+                        <img id = "theimg" src ="./0c6314e2dc9b5ad64fe861498f50e3.png"/>
+                     <input type = "submit" value = "click" onclick = "getLandscape()"/>
                   </div>
                 </div>
             </div>
         </div>
     </main>
     <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
-
-<script src="picture_edit.js"></script>
-<script src="fileup.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="./ajax.js"></script>
+    <script src="picture_edit.js"></script>
+    <script src="fileup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script>
