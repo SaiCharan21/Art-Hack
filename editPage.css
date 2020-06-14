@@ -63,7 +63,7 @@ body {
     opacity: 0;
     font-size: 30em;
     text-align: center;
-    color: rgba(0, 0, 0, 0.109);
+    color: rgba(255, 253, 253, 0.109);
     z-index: -1;
     animation: background-text-reveal 1s forwards;
     animation-delay: 2.5s;
